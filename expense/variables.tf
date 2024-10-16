@@ -4,7 +4,7 @@ variable "environment" {
 
 variable "instance_names" {
   type    = list(string)
-  default = ["mysql", "backend", "fronten"]
+  default = ["mysql", "backend", "frontend"]
 }
 
 variable "common_tags" {
@@ -16,10 +16,10 @@ variable "common_tags" {
   }
 }
 
-# variable "domain_name" {
-#   default = "prasadking.xyz"
-# }
+variable "domain_name" {
+  default = "prasadking.xyz"
+}
 
-# variable "zone_id" {
-#   default = "Z01844013P3FFC9B6FQWK"
-# }
+variable "zone_id" {
+  default = "Z01844013P3FFC9B6FQWK"
+}
