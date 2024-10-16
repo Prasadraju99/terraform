@@ -10,7 +10,7 @@ variable "instance_type" {
 }
 
 variable "sg_name" {
-  default = allow_ssh_all
+  default = "allow_ssh_all"
 }
 
 variable "description" {
