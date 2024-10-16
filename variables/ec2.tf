@@ -1,3 +1,9 @@
+# 1. command line - terraform plan -var="instance_type=t3.large"
+# 2. terrafrom.tfvars
+# 3. environment variables # export TF_VAR_instance_type=t3.nano
+# 4. default
+# 5. prompt for a value
+
 resource "aws_instance" "terraform" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
