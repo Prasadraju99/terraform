@@ -1,3 +1,6 @@
+# Terraform stores information about your infrastructure in a state file. This state file keeps track of resources created by your configuration and maps them to real-world resources.
+# Terraform compares your configuration with the state file and your existing infrastructure to create plans and make changes to your infrastructure # to maintain state files create S3Bucket and dynamoDB.
+
 resource "aws_instance" "terraform" {
   ami                    = "ami-09c813fb71547fc4f"
   instance_type          = "t3.micro"

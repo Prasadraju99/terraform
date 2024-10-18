@@ -1,3 +1,5 @@
+# A conditional expression uses the value of a boolean expression to select one of two values.
+# condition ? true_val : false_val
 resource "aws_instance" "terraform" {
   ami                    = "ami-09c813fb71547fc4f"
   instance_type          = var.environment == "prod" ? "t3.small" : "t3.micro" # condition
